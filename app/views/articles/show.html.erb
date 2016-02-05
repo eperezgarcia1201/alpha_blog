@@ -6,3 +6,5 @@
     Description: <%= @article.description %>
 
 </p>
+<%= link_to "Editing this article", edit_article_path(params[:id]) %>
+<%= link_to "Back to articles listining", articles_path %>
