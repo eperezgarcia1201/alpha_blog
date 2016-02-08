@@ -13,3 +13,41 @@ $navbar-inverse-bg:#08088A;
     color:#FFF;
     text-decoration: none;
 }
+
+.jumbotron {
+    background:asset-url('banner.png') center center;
+    background-size: cover;
+    height:600px;
+}
+.jumbotron h1 {
+    color:#fff;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #000;
+}
+
+
+.btn-xlarge {
+    font-size: 1.7em;
+    background-color: black;
+    border-color: #fff;
+}
+footer {
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 1px solid #eaeaea;
+    color:#777;
+}
+footer a:hover{
+    color:#222;
+}
+footer small{
+    float:left;
+}
+
+footer ul li {
+    list-style: none;
+    float: right;
+}
