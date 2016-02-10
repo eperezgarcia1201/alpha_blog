@@ -32,18 +32,21 @@ $navbar-inverse-bg:#08088A;
     text-shadow: 2px 2px 2px #000;
 }
 
-
+.btn-padding{
+    margin-top:10px;
+}
 .btn-xlarge {
     font-size: 1.7em;
     background-color: black;
     border-color: #fff;
 }
 .article-actions{
+    text-align:center;
     border-top:1px solid #eaeaea;
     padding-top:5px;
 }
 .description {
-    margin:0;
+    margin-top:0;
     text-align:center;
 }
 footer {
