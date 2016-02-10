@@ -31,9 +31,10 @@ $navbar-inverse-bg:#08088A;
     font-weight: bold;
     text-shadow: 2px 2px 2px #000;
 }
-
+@media screen and (max-width : 568px ){
 .btn-padding{
     margin-top:10px;
+}
 }
 .btn-xlarge {
     font-size: 1.7em;
