@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
 	before_action :set_user, only: [:edit, :update, :show]
+	before_action :require_same_user, only: [:edit, :update]
 	def new
 		@user = User.new
 	end
@@ -42,5 +43,11 @@ class UsersController < ApplicationController
 	end
 	def user_params
 		params.require(:user).permit(:username, :email, :password)
+	end
+	def require_same_user
+		if current_user != @user
+			flash[:danger] = "you can only edit or update if you are the current user"
+			redirect_to root_path
+		end
 	end
 end
